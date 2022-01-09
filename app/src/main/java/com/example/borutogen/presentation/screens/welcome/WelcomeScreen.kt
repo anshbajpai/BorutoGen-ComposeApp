@@ -10,6 +10,8 @@ import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -23,6 +25,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import com.example.borutogen.domain.model.OnBoardingPage
 import com.example.borutogen.navigation.Screen
+import com.example.borutogen.presentation.screens.splash.SplashViewModel
 import com.example.borutogen.ui.theme.*
 import com.google.accompanist.pager.*
 
@@ -31,8 +34,12 @@ import com.google.accompanist.pager.*
 @Composable
 fun WelcomeScreen(
     navController: NavHostController,
-    welcomeViewModel: WelcomeViewModel = hiltViewModel()
+    welcomeViewModel: WelcomeViewModel = hiltViewModel(),
 ) {
+
+
+
+
     val pages = listOf(
         OnBoardingPage.First,
         OnBoardingPage.Second,

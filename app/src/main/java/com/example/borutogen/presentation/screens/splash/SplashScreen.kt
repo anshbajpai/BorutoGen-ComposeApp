@@ -51,7 +51,7 @@ fun SplashScreen(
             navHostController.navigate(Screen.Welcome.route)
         }
     }
-    Splash(rotate = rotate.value)
+
 }
 
 @Composable

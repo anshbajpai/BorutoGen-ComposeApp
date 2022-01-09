@@ -23,6 +23,6 @@ object DatabaseModule {
         context,
         BorutoDatabase::class.java,
         BORUTO_DATABASE
-    ).build()
+    ).fallbackToDestructiveMigration().build()
 
 }

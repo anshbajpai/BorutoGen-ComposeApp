@@ -9,6 +9,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.example.borutogen.presentation.screens.home.HomeScreen
+import com.example.borutogen.presentation.screens.search.SearchScreen
 import com.example.borutogen.presentation.screens.splash.SplashScreen
 import com.example.borutogen.presentation.screens.welcome.WelcomeScreen
 import com.google.accompanist.pager.ExperimentalPagerApi
@@ -16,10 +17,10 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 @ExperimentalAnimationApi
 @ExperimentalPagerApi
 @Composable
-fun SetupNavGraph(navController: NavHostController) {
+fun SetupNavGraph(navController: NavHostController, navBool: Boolean) {
     NavHost(
         navController = navController,
-            startDestination = Screen.Splash.route
+            startDestination = Screen.Splash.route ,
     ){
         composable(
             route = Screen.Splash.route
@@ -34,7 +35,9 @@ fun SetupNavGraph(navController: NavHostController) {
         composable(
             route = Screen.Home.route
         ){
-            HomeScreen()
+            HomeScreen(
+                navController
+            )
         }
         composable(
             route = Screen.Details.route,
@@ -47,7 +50,7 @@ fun SetupNavGraph(navController: NavHostController) {
         composable(
             route = Screen.Search.route
         ){
-
+            SearchScreen(navController)
         }
     }
 }

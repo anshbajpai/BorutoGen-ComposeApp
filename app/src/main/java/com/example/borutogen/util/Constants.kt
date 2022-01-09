@@ -8,5 +8,5 @@ object Constants {
 
     const val PREFERENCES_NAME = "boruto_preferences"
 
-    const val BASE_URL = "http://10.0.2.2:8080"
+    const val BASE_URL = "https://boruto-new.herokuapp.com"
 }
