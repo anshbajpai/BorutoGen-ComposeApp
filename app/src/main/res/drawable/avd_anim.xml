@@ -1,0 +1,49 @@
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="100dp"
+            android:height="100dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+            <group android:name="group"
+
+                >
+                <path
+                    android:name="my_logo"
+                    android:pathData="M 95.812 96.912 C 83.622 92.06 72.8 81.617 71.012 68.112 C 71.016 67.656 71.133 67.208 71.354 66.81 C 71.575 66.411 71.892 66.074 72.277 65.829 C 72.741 65.529 73.208 65.223 73.684 64.912 C 76.153 63.229 78.51 61.387 80.74 59.397 C 83.005 57.279 85.121 55.007 87.073 52.597 C 94.983 42.145 100.72 28.445 99.927 15.042 C 99.751 11.923 99.198 8.837 98.282 5.851 C 98.107 5.221 97.954 4.672 97.824 4.214 C 97.571 3.314 97.092 3.279 96.751 4.142 C 96.579 4.579 96.374 5.104 96.133 5.707 C 95.697 6.881 95.161 8.016 94.533 9.099 C 90.21 16.71 78.158 31.733 67.633 28.944 C 65.084 28.269 63.466 24.324 61.909 22.367 C 57.302 16.556 51.674 11.634 45.3 7.844 C 34.035 1.207 18.57 -2.288 5.775 1.665 C 5.145 1.84 4.597 1.994 4.139 2.123 C 3.106 2.412 2.506 2.578 2.506 2.578 L 5.63 3.815 C 6.802 4.254 7.935 4.789 9.019 5.415 C 14.549 8.377 19.344 12.543 23.05 17.605 C 26.183 22.047 32.531 31.253 26.192 35.194 C 11.152 44.545 -0.727 63.796 0.035 81.922 Q 0.103 83.546 0.168 85.052 C 0.234 86.829 0.434 88.598 0.768 90.344 C 0.936 91.668 1.214 92.976 1.597 94.255 C 1.772 94.885 1.925 95.434 2.055 95.892 C 2.308 96.8 2.787 96.83 3.128 95.964 C 3.3 95.524 3.508 95.002 3.746 94.399 C 4.184 93.226 4.719 92.091 5.346 91.007 C 6.044 89.595 6.854 88.24 7.766 86.955 C 11.077 82.319 15.268 78.38 20.1 75.363 C 22.676 73.813 31.79 68.735 34.185 72.411 C 43.513 86.735 57.757 96.634 74.68 99.411 C 75.916 99.63 77.165 99.764 78.419 99.811 C 79.576 99.874 80.7 99.935 81.784 99.995 C 82.866 99.947 83.908 99.908 84.914 99.862 C 86.688 99.795 88.454 99.594 90.198 99.262 C 91.522 99.095 92.829 98.818 94.106 98.433 C 94.736 98.258 95.287 98.107 95.742 97.978 C 96.634 97.732 96.668 97.256 95.812 96.912 Z M 49.927 59.858 C 47.419 59.852 45.008 58.882 43.195 57.149 C 41.382 55.416 40.303 53.051 40.184 50.546 C 40.175 50.38 40.136 50.22 40.136 50.051 C 40.128 47.497 41.122 45.038 42.903 43.207 C 44.683 41.376 47.112 40.313 49.666 40.249 C 52.219 40.185 54.699 41.123 56.569 42.863 C 58.44 44.602 59.556 47.008 59.677 49.559 C 59.683 49.725 59.725 49.885 59.725 50.054 C 59.726 51.774 59.273 53.465 58.414 54.955 C 57.554 56.445 56.317 57.683 54.827 58.544 C 53.338 59.404 51.647 59.858 49.927 59.858 Z"
+                    android:fillColor="#6200ee"
+                    android:strokeWidth="1"/>
+            </group>
+        </vector>
+    </aapt:attr>
+    <target android:name="group">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:propertyName="rotation"
+                    android:duration="400"
+                    android:valueFrom="0"
+                    android:valueTo="370"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotX"
+                    android:duration="400"
+                    android:valueFrom="30"
+                    android:valueTo="30"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                <objectAnimator
+                    android:propertyName="pivotY"
+                    android:duration="400"
+                    android:valueFrom="30"
+                    android:valueTo="30"
+                    android:valueType="floatType"
+                    android:interpolator="@android:interpolator/fast_out_slow_in"/>
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>
